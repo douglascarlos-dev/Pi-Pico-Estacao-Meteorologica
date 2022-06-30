@@ -1,0 +1,10 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/douglasc/public_html/
+        - /bin/cp index.html $DEPLOYPATH
+        - /bin/cp raspberry_pi_pico_v2.fzz $DEPLOYPATH
+        - /bin/cp raspberry_pi_pico.fzz $DEPLOYPATH
+        - /bin/cp -R css $DEPLOYPATH
+        - /bin/cp -R img $DEPLOYPATH
+        - /bin/cp -R js $DEPLOYPATH
