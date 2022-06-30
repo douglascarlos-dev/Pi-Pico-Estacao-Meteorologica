@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pi Pico Estação meteorológica</title>
+  <meta name="author" content="Douglas Carlos">
+  <meta property="og:description" content="Estação meteorológica experimental usando Raspberry Pi Pico"/>
+  <meta property="og:title" content="Pi Pico Estação meteorológica"/>
+  <meta name="description" content="Estação meteorológica experimental usando Raspberry Pi Pico">
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+
+<body>
+    <main class="container">
+        <div class="bg-light p-5 rounded">
+            <h1 class="bd-title" id="content">Estação meteorológica experimental usando Raspberry Pi Pico</h1>
+            <h2 id="responsive-images"><div>Sobre</div></h2>
+            <p>As mudanças climáticas são um dos maiores desafios da humanidade!</p>
+            <p>Para a agricultura, que é totalmente dependente do clima, qualquer alteração pode trazer problemas para o desenvolvimento das plantas e a criação de animais, e, consequentemente, para a produção de alimentos.</p>
+            <p>Assim, este é um projeto de uma estação meteorológica experimental de baixo custo com o objetivo de disseminar a tecnologia usada, tornando-a acessível para a comunidade de estudantes, pesquisadores e hobistas. Podendo assim, colaborar para a redução dos impactos negativos provocados pelo clima, tornando uma ferramenta importante para ajudar os produtores a enfrentar os desafios das mudanças climáticas. Para atingir esse objetivo ela será open-software e open-hardware.</p>
+            <h2 id="responsive-images"><div>News</div></h2>
+            <p>28/05/2022 - Inspecionando componentes.</p>
+            <img src="componentes.webp" class="img-thumbnail"  style="width: 565px;"><br><br>
+            <p>21/05/2022 - Formatando o projeto no método DIY, para pode ser montado sem a ajuda direta de especialistas ou profissionais.</p>
+            <p>14/05/2022 - Estudando sobre open-hardware e os requisitos para certificar o projeto.</p>
+            <p>07/05/2022 - Representação esquemática da placa pcb que vai os componentes. Os sensores serão conectados em conectores JST. Clique na imagem para abrir.</p>
+            <a href="./representacao_esquemática.png" target="_blank"><img src="schematic_sheet.jpg" class="img-thumbnail"  style="width: 565px;"></a><br><br>
+            <p>30/04/2022 - Realizado encomenda dos componentes finais para medição e identificar com precisão as localizações dos componentes.</p>
+            <p>23/04/2022 - Iniciado projeto no Autodesk Eagle, para criação do circuito impresso, diagrama esquemático e roteamento de PCB.</p>
+            <p>21/04/2022 - Imagem dos circuitos elétricos montados em uma protoboard. Os componentes usados no RTC estão detalhados abaixo.</p>
+            <img src="img_20220421_161358819.jpg" class="img-thumbnail"><br><br>
+            <p>16/04/2022 - Imagem da montagem de circuitos elétricos experimentais com RTC.</p>
+            <img src="raspberry_pi_pico_bb_v2.jpg" class="img-thumbnail"><br><br>
+            <p>09/04/2022 - Encomendado os componentes para criação de um RTC.</p>
+            <p>02/04/2022 - Criado a imagem da montagem de circuitos elétricos experimentais.</p>
+            <img src="raspberry_pi_pico_bb.jpg" class="img-thumbnail"><br><br>
+            <p>26/03/2022 - Criado o código do software em MicroPython para comunicação com os sensores e o site <a href="https://www.wunderground.com/dashboard/pws/IUBERA9" >https://www.wunderground.com/dashboard/pws/IUBERA9</a></p>
+            <p>19/03/2022 - Fixados componentes de temperatura, pressão do ar e umidade na protoboard.</p>
+            <p>12/03/2022 - Realizada solda dos pinos de componentes.</p>
+            <p>05/03/2022 - Encomendado os componentes iniciais para a criação de uma estação meteorológica pessoal.</p>
+            <h2 id="responsive-images"><div>Arquivos<a class="anchorjs-link " href="#responsive-images" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+            <p>Design em Fritzing v2 - <a href="./raspberry_pi_pico_v2.fzz" download>raspberry_pi_pico_v2.fzz</a> 88,1 KB</p>
+            <p>Design em Fritzing - <a href="./raspberry_pi_pico.fzz" download>raspberry_pi_pico.fzz</a> 83,5 KB</p>
+            <h2 id="responsive-images"><div>Componentes atuais<a class="anchorjs-link " href="#responsive-images" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a></div></h2>
+            <ul>
+                <li>Raspberry Pi Pico</li>
+                <li>Sensor HTU21D</li>
+                <li>Sensor BMP280</li>
+                <li>Módulo WiFi ESP8266 ESP-01</li>
+                <li>Fonte 5v Micro-USB</li>
+                <li>RTC</li>
+                    <ul>
+                        <li>CI DS1307</li>
+                        <li>Cristal 32.768KHz</li>
+                        <li>Resistor 10K&#8486;</li>
+                        <li>Resistor 10K&#8486;</li>
+                        <li>Capacitor 0.1uF</li>
+                        <li>Bateria CR2032</li>
+                    </ul>
+            </ul>
+        </div>
+    </main>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
