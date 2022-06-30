@@ -1,7 +1,7 @@
 ---
 deployment:
       tasks:
-        - export DEPLOYPATH=/home/douglasc/public_html/
+        - export DEPLOYPATH=/home/douglasc/public_html/estacao_meteorologica
         - /bin/cp index.html $DEPLOYPATH
         - /bin/cp raspberry_pi_pico_v2.fzz $DEPLOYPATH
         - /bin/cp raspberry_pi_pico.fzz $DEPLOYPATH
